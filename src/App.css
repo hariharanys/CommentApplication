@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(223, 19%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.increment-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  padding: 0 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(239, 57%, 85%);
+  border-radius: 0.5rem;
+  margin-right: 1.5rem !important;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+}
+.nopadding:nth-child(2) {
+  font-weight: 500;
+}
+.avatar-contaier {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.avatar-detail:nth-child(2) {
+  margin-right: 1rem;
+}
+.profile-detail:nth-child(2) {
+  margin-right: 1rem;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.profile-detail:nth-child(3) {
+  color: hsl(228, 4%, 76%);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.replyContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  cursor: pointer;
+}
+.replyContainer img {
+  margin-top: 5px;
+}
+.replyContainer p {
+  margin-left: 1rem;
+  transition: ease-in 0.2s;
+  font-weight: 600;
+}
+.replyContainer p:hover {
+  color: hsl(238, 40%, 52%);
+}
+.chat-detail {
+  color: hsl(220, 1%, 59%);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.line-container {
+  border-left: 1px solid #000;
+  margin-left: 2rem !important;
+}
+.mention-username {
+  color: hsl(238, 40%, 52%);
+  font-weight: 600;
+}
