@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import ReceivedChat from "./components/receivedChat";
+import ChatBox from "./components/chatBox";
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -23,6 +24,7 @@ function App() {
     <div className="App py-5">
       {userData &&
         userData.comments.map((comment) => <ReceivedChat userData={comment} />)}
+      <ChatBox />
     </div>
   );
 }

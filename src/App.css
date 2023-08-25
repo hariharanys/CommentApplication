@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
+  position: relative;
 }
 .increment-container {
   width: fit-content;
@@ -79,4 +80,25 @@
 .mention-username {
   color: hsl(238, 40%, 52%);
   font-weight: 600;
+}
+.chatBox {
+  position: absolute;
+  bottom: 2rem;
+}
+.btnEl {
+  background-color: hsl(238, 40%, 52%);
+  border-radius: 10px;
+  color: #fff;
+  width: fit-content;
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  height: fit-content;
+  margin-left: 1rem;
+}
+.avatarProfile {
+  width: 40px !important;
+  height: 40px !important;
+}
+.textAreaEl {
+  resize: none;
 }
