@@ -6,13 +6,25 @@ import ReplyChatCard from "./replyChat";
 
 const receivedChat = (props) => {
   const userData = props.userData;
+
+  const increLike = (e) => {
+    console.log(e);
+  };
+
+  const decreLike = (e) => {
+    console.log(e);
+  };
   return (
     <>
       <div className="container bg-white py-3 mb-3 rounded shadow-sm row">
         <div className="increment-container py-1">
-          <p className="nopadding">+</p>
+          <p className="nopadding likeEl" onClick={increLike}>
+            +
+          </p>
           <p className="nopadding">{userData.score}</p>
-          <p className="nopadding">-</p>
+          <p className="nopadding likeEl" onClick={decreLike}>
+            -
+          </p>
         </div>
 
         <div className="col-11 row">

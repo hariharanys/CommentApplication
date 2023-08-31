@@ -4,17 +4,26 @@ import Juliusomo from "../images/avatars/juliusomo.png";
 
 const chatBox = () => {
   return (
-    <div className="container bg-white py-3 mb-3 rounded shadow-sm row chatBox">
-      <img src={Juliusomo} alt="Load again" className="col-lg-1 col-2" />
-      <textarea
-        className="form-control col float-left textAreaEl"
-        placeholder="Leave a comment here"
-        id="floatingTextarea2"
-      ></textarea>
-      <button className="col-lg-1 col-2 btnEl" type="button">
-        Send
-      </button>
-    </div>
+    <>
+      <div className="emptyContainer"></div>
+      <div className="container chatBox bg-white mb-3 row py-3 shadow-sm rounded">
+        <img
+          src={Juliusomo}
+          alt="Load again"
+          className="col-md-1 col-2 align-self-start"
+        />
+        <div className="col p-0">
+          <textarea
+            className="form-control"
+            id="textChatArea"
+            rows="2"
+          ></textarea>
+        </div>
+        <button type="button" className="btnEl">
+          Send
+        </button>
+      </div>
+    </>
   );
 };
 
